@@ -1,5 +1,5 @@
 lib = File.expand_path('../lib', __FILE__)
-rails_version = '~> 4.1'
+rails_version = '>= 3.2.13'
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'association-soft-build/version'
 
