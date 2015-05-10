@@ -1,5 +1,4 @@
 lib = File.expand_path('../lib', __FILE__)
-rails_version = '>= 3.2.13'
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'activerecord-devkit/version'
 
@@ -15,9 +14,7 @@ Gem::Specification.new do |s|
 
   s.files       = Dir['{lib}/**/*.rb', 'LICENSE', '*.md']
 
-  s.add_dependency 'activerecord', rails_version
-  s.add_dependency 'activesupport', rails_version
-  s.add_dependency 'railties', rails_version
+  s.add_dependency 'activerecord', '>= 3.2.13'
 
   s.add_development_dependency 'bundler'
 end
