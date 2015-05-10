@@ -1,5 +1,24 @@
+GIT
+  remote: git://github.com/rails/rails.git
+  revision: ab35884c554c2533aa6cb95da56b8560c7f4e210
+  branch: 4-2-stable
+  specs:
+    activemodel (4.2.2.beta)
+      activesupport (= 4.2.2.beta)
+      builder (~> 3.1)
+    activerecord (4.2.2.beta)
+      activemodel (= 4.2.2.beta)
+      activesupport (= 4.2.2.beta)
+      arel (~> 6.0)
+    activesupport (4.2.2.beta)
+      i18n (~> 0.7)
+      json (~> 1.7, >= 1.7.7)
+      minitest (~> 5.1)
+      thread_safe (~> 0.3, >= 0.3.4)
+      tzinfo (~> 1.1)
+
 PATH
-  remote: .
+  remote: ../
   specs:
     activerecord-devkit (0.0.0)
       activerecord (>= 3.2.13)
@@ -7,19 +26,6 @@ PATH
 GEM
   remote: http://rubygems.org/
   specs:
-    activemodel (4.2.1)
-      activesupport (= 4.2.1)
-      builder (~> 3.1)
-    activerecord (4.2.1)
-      activemodel (= 4.2.1)
-      activesupport (= 4.2.1)
-      arel (~> 6.0)
-    activesupport (4.2.1)
-      i18n (~> 0.7)
-      json (~> 1.7, >= 1.7.7)
-      minitest (~> 5.1)
-      thread_safe (~> 0.3, >= 0.3.4)
-      tzinfo (~> 1.1)
     appraisal (2.0.1)
       activesupport (>= 3.2.21)
       bundler
@@ -55,6 +61,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activerecord!
   activerecord-devkit!
   appraisal
   bundler
