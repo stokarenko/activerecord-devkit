@@ -1,15 +1,15 @@
 lib = File.expand_path('../lib', __FILE__)
 rails_version = '>= 3.2.13'
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'association-soft-build/version'
+require 'activerecord-devkit/version'
 
 Gem::Specification.new do |s|
-  s.name        = 'association-soft-build'
-  s.version     = AssociationSoftBuild::VERSION.dup
+  s.name        = 'activerecord-devkit'
+  s.version     = ActiveRecordDevkit::VERSION.dup
   s.authors     = 'Sergey Tokarenko'
   s.email       = 'private.tokarenko.sergey@gmail.com'
-  s.homepage    = 'https://github.com/stokarenko/association-soft-build'
-  s.summary     = 'ActiveRecord plugin which provides the possibility to build an association without affecting to parent object.'
+  s.homepage    = 'https://github.com/stokarenko/activerecord-devkit'
+  s.summary     = 'ActiveRecord plugin which provides the scope of utility helpers.'
   s.description = s.summary
   s.license     = 'MIT'
 

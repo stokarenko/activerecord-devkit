@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe AssociationSoftBuild::Relation do
+describe ActiveRecordDevkit::Relation do
   subject { User.create! }
 
   it 'should set user`s id after creation' do

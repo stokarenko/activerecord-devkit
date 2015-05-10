@@ -1,4 +1,4 @@
-module AssociationSoftBuild
+module ActiveRecordDevkit
   module Relation
     extend ActiveSupport::Concern
 
