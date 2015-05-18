@@ -14,6 +14,7 @@ Gem::Specification.new do |s|
 
   s.files       = Dir['{lib}/**/*.rb', 'LICENSE', '*.md']
 
+  s.add_dependency 'ruby-features'
   s.add_dependency 'activerecord', '>= 3.2.13'
 
   s.add_development_dependency 'bundler'

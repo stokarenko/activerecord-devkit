@@ -1,4 +1,6 @@
-describe ActiveRecordDevkit::Relation do
+describe 'association_soft_build' do
+  before(:all) { RubyFeatures.apply 'activerecord_devkit/association_soft_build' }
+
   subject { User.create! }
 
   it 'should set user`s id after creation' do

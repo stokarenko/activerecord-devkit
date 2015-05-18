@@ -1,9 +1,5 @@
 require 'activerecord-devkit/version'
 
-require 'active_record'
+require 'ruby-features'
 
-module ActiveRecordDevkit
-  autoload :Relation, 'activerecord-devkit/relation'
-end
-
-require 'activerecord-devkit/railtie'
+RubyFeatures.find_in_path(File.expand_path('../activerecord-devkit/features', __FILE__))
