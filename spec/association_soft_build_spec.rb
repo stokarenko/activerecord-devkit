@@ -14,12 +14,14 @@ describe 'association_soft_build' do
   it 'should build associations as usually' do
     role = subject.roles.build
     expect(role.user_id).to eq(subject.id)
+    expect(role.user.object_id).to eq(subject.object_id)
     expect(subject.roles).to_not be_empty
   end
 
   it 'should build associations without affecting to parent object' do
     role = subject.roles.soft_build
     expect(role.user_id).to eq(subject.id)
+    expect(role.user.object_id).to eq(subject.object_id)
     expect(subject.roles).to be_empty
   end
 end

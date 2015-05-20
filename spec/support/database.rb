@@ -16,7 +16,7 @@ RSpec.configure do |config|
 end
 
 class User < ActiveRecord::Base
-  has_many :roles
+  has_many :roles, inverse_of: :user
 end
 
 class Role < ActiveRecord::Base
