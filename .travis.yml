@@ -1,0 +1,20 @@
+language: ruby
+
+rvm:
+  - 1.9.3
+  - 2.2
+
+gemfile:
+  - gemfiles/3.2.gemfile
+  - gemfiles/4.0.gemfile
+  - gemfiles/4.1.gemfile
+  - gemfiles/4.2.gemfile
+
+script: 'bundle exec rspec'
+
+notifications:
+  email: false
+
+addons:
+  code_climate:
+    repo_token: 670343f7e55270e7f544793c925b0a60204a5b4449b63f956c020ac95978cb2d
