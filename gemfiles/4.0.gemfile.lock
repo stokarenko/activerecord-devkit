@@ -21,7 +21,7 @@ GIT
 PATH
   remote: ../
   specs:
-    activerecord-devkit (0.0.0)
+    activerecord-devkit (1.0.0)
       activerecord (>= 3.2.13)
       ruby-features (>= 1.1.1)
 
