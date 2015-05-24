@@ -18,7 +18,7 @@ Gem::Specification.new do |s|
 
   s.required_ruby_version = '>= 1.9.3'
 
-  s.add_dependency 'ruby-features', '>= 1.1'
+  s.add_dependency 'ruby-features', '>= 1.1.1'
   s.add_dependency 'activerecord', '>= 3.2.13'
 
   s.add_development_dependency 'bundler'
