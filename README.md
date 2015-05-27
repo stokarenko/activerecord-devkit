@@ -51,6 +51,8 @@ new_role = user.roles.build
 new_role = user.roles.soft_build
 # or
 new_role = user.association(:roles).soft_build
+# or
+new_role = user.roles.where(name: 'admin').soft_build
 ```
 
 ## License
