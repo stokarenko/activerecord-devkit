@@ -1,6 +1,12 @@
 RubyFeatures.define 'activerecord_devkit/association_soft_build' do
   condition(:activerecord_3){ ActiveRecord::VERSION::MAJOR == 3 }
 
+  apply_to 'ActiveRecord::Relation' do
+    applied do
+      alias soft_build build
+    end
+  end
+
   apply_to 'ActiveRecord::Associations::CollectionProxy' do
     applied do
       delegate :soft_build, to: :@association

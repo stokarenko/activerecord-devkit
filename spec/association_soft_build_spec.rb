@@ -32,4 +32,9 @@ describe 'association_soft_build' do
     expect(subject.roles).to be_empty
   end
 
+  it 'should build relation' do
+    role = Role.where(user_id: 10).soft_build
+    expect(role.user_id).to eq(10)
+  end
+
 end
